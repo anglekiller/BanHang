@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-BanHang-8EEF9717-366C-46D3-AB46-9922D3791D51</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Shared\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Temp\sass\.sass-cache\8a70e6a1bc6f1cd19b01f3540f0896490c17dcbd\styles.scssc" />
+    <None Include="wwwroot\Temp\sass\.sass-cache\9345c87f8ee8b28345a23685e87b6d706de11e37\styles.scssc" />
+    <None Include="wwwroot\Temp\css\font-awesome.min.css" />
+    <None Include="wwwroot\Temp\css\milligram.min.css" />
+    <None Include="wwwroot\Temp\css\normalize.css" />
+    <None Include="wwwroot\Temp\css\styles.css" />
+    <None Include="wwwroot\Temp\download.jpg" />
+    <None Include="wwwroot\Temp\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\Temp\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\Temp\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\Temp\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\Temp\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\Temp\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\Temp\index.html" />
+    <None Include="wwwroot\Temp\js\chart-data.js" />
+    <None Include="wwwroot\Temp\js\chart.min.js" />
+    <None Include="wwwroot\Temp\sass\config.codekit" />
+    <None Include="wwwroot\Temp\sass\styles.scss" />
+  </ItemGroup>
+
+</Project>

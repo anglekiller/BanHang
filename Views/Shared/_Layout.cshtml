@@ -1,0 +1,145 @@
+﻿@*<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - DA</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DA</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <partial name="_LoginPartial" />
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                <img src="" alt="Alternate Text" />
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - DA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </body>
+    </html>*@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title>CellPhone</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
+
+    <!-- Template Styles -->
+    <link rel="stylesheet" href="~/Temp/css/font-awesome.min.css">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="~/Temp/css/normalize.css">
+
+    <!-- Milligram CSS minified -->
+    <link rel="stylesheet" href="~/Temp/css/milligram.min.css">
+
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="~/Temp/css/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="row">
+            <div class="column column-30 col-site-title"><a href="#" class="site-title float-left">CellPhone</a></div>
+            <div class="column column-40 col-search">
+                <a href="#" class="search-btn fa fa-search"></a>
+                <input type="text" name="" value="" placeholder="Search..." />
+            </div>
+            <div class="column column-30">
+                <div class="user-section">
+                    <a href="#">
+                        <img src="https://media-cdn.laodong.vn/Storage/NewsPortal/2020/8/21/829850/Bat-Cuoi-Truoc-Nhung-07.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+                        <div class="username">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="sidebar" class="column">
+
+            <ul>
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="DashBoard"><em class="fa fa-home"></em>DashBoard</a></li>
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index"><em class="fa fa-mobile-phone "></em>Product</a></li>
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Bills" asp-action="Index"><em class="fa fa-book "></em>Bills</a></li>
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Index"><em class="fa fa-user-o"></em>User</a></li>
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Permissions" asp-action="Index"><em class="fa fa-user-secret"></em>Permissions</a></li>
+                @*<li><a href="#charts"><em class="fa fa-bar-chart"></em> Charts</a></li>
+                <li><a href="#widgets"><em class="fa fa fa-clone"></em> Widgets</a></li>
+                <li><a href="#forms"><em class="fa fa-pencil-square-o"></em> Forms</a></li>
+                <li><a href="#alerts"><em class="fa fa-warning"></em> Alerts</a></li>
+                <li><a href="#buttons"><em class="fa fa-hand-o-up"></em> Buttons</a></li>
+                <li><a href="#tables"><em class="fa fa-table"></em> Tables</a></li>
+                <li><a href="#grid"><em class="fa fa-columns"></em> Grid</a></li>*@
+            </ul>
+        </div>
+        @*<section id="main-content" class="column column-offset-20">
+                <main role="main" class="pb-3">
+                    <div class="container-fluid">
+                        @RenderBody()
+                    </div>
+                </main>
+            </section>*@
+        <section id="main-content" class="column column-offset-20">
+            <div class="row grid-responsive">
+                <div class="column page-heading">
+                    <div class="large-card">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+    </section>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
